@@ -1,0 +1,201 @@
+ .datepicker td,
+        .datepicker th {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 0.85rem;
+        }
+
+        .datepicker {
+            margin-bottom: 3rem;
+        }
+
+
+        body {
+            font-family: Verdana, sans-serif;
+            min-height: 100vh;
+            background-color: #fdf3fb;
+        }
+
+        .input-group {
+            border-radius: 30rem;
+        }
+
+        input.form-control {
+            border-radius: 30rem 0 0 30rem;
+            border: none;
+        }
+
+        input.form-control:focus {
+            box-shadow: none;
+        }
+
+        input.form-control::placeholder {
+            font-style: italic;
+        }
+
+        .input-group-text {
+            border-radius: 0 30rem 30rem 0;
+            border: none;
+        }
+
+        .datepicker-dropdown {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        html,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Raleway", sans-serif
+        }
+
+        .text {
+            font-size: 25px;
+        }
+
+        .top {
+            background-color: #5996ff;
+            margin-bottom: 3mm;
+        }
+
+        .d {
+            float: left;
+            margin-right: 2mm;
+            margin-bottom: 2mm;
+            background-color: #5cff77;
+        }
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .month {
+            padding: 70px 25px;
+            width: 100%;
+            background: #1abc9c;
+            text-align: center;
+        }
+
+        .month ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .month ul li {
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .month .prev {
+            float: left;
+            padding-top: 10px;
+        }
+
+        .month .next {
+            float: right;
+            padding-top: 10px;
+        }
+
+        .weekdays {
+            margin: 0;
+            padding: 10px 0;
+            background-color: #ddd;
+        }
+
+        .weekdays li {
+            display: inline-block;
+            width: 13.6%;
+            color: #666;
+            text-align: center;
+        }
+
+        .days {
+            padding: 10px 0;
+            background: #eee;
+            margin: 0;
+        }
+
+        .days li {
+            list-style-type: none;
+            display: inline-block;
+            width: 13.6%;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .days li .active {
+            padding: 5px;
+            background: #1abc9c;
+            color: white !important
+        }
+
+        @media screen and (max-width:720px) {
+
+            .weekdays li,
+            .days li {
+                width: 13.1%;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+
+            .weekdays li,
+            .days li {
+                width: 12.5%;
+            }
+
+            .days li .active {
+                padding: 2px;
+            }
+        }
+
+        @media screen and (max-width: 290px) {
+
+            .weekdays li,
+            .days li {
+                width: 12.2%;
+            }
+        }
+
+
+        #gpa {
+            padding-bottom: 4.8%;
+        }
+
+        #classes {
+            padding-bottom: 4.8%;
+        }
+
+     
+        .d {
+            margin-left: 1.5%;
+        }
+
+        img {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 35px;
+        }
+        table{
+            width:50%;
+        }
+
+        

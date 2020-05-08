@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles_noha.css" type="text/css">
+</head>
+
+<body>
+  <%- include('../navbar')%>
+  <div class="contaner" style="margin-right: 200px;">
+    <div class=" right">
+      <div class="month">
+        <a href="/events/new_noha" class="add">Add Event</a>
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>
+            August </h1><br>
+            <span style="font-size:18px">2020</span>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+
+      <ul class="days">
+        <li>
+          <form action="/getEvent" method="get">
+            <button type="submit" class="btn">1</button>
+          </form>
+        </li>
+        <li>
+          <form action="/getEvent" method="get">
+            <button type="submit" class="btn">2</button>
+          </form>
+        </li>
+        <li><button class="btn">3</button></li>
+        <li><button class="btn">4</button></li>
+        <li><button class="btn">5</button></li>
+        <li><button class="btn">6</button></li>
+        <li><button class="btn">7</button></li>
+        <li><button class="btn">8</button></li>
+        <li><button class="btn">9</button></li>
+        <li><button class="btn">
+            <div class="active">10</div>
+          </button></li>
+        <li><button class="btn">11</button></li>
+        <li><button class="btn">12</button></li>
+        <li><button class="btn">13</button></li>
+        <li><button class="btn">14</button></li>
+        <li><button class="btn">15</button></li>
+        <li><button class="btn">16</button></li>
+        <li><button class="btn">17</button></li>
+        <li><button class="btn">18</button></li>
+        <li><button class="btn">19</button></li>
+        <li><button class="btn">20</button></li>
+        <li><button class="btn">21</button></li>
+        <li><button class="btn">22</button></li>
+        <li><button class="btn">23</button></li>
+        <li><button class="btn">24</button></li>
+        <li><button class="btn">25</button></li>
+        <li><button class="btn">26</button></li>
+        <li><button class="btn">27</button></li>
+        <li><button class="btn">28</button></li>
+        <li><button class="btn">29</button></li>
+        <li><button class="btn">30</button></li>
+        <li><button class="btn">31</button></li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

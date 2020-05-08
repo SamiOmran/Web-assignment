@@ -1,0 +1,238 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;
+ background: -webkit-linear-gradient(70deg, #1abc9c 40%, #777 40%); }
+
+.contaner{
+     margin: 100px auto;
+     font-family: Raleway;
+     padding: 40px;
+     width: 60%;
+     min-width: 200px;
+     display: flex;
+     flex-direction: row;   
+     
+}
+#left{
+  height: 466px;
+  background-color: #ddd;
+  width:30%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 0 0 12px;
+}
+
+.in{
+  height: 453px;
+  background-color: #ddd;
+  width:93%; 
+ border-color: #1abc9c;
+  border-style: double;
+  border-radius: 12px;
+ margin-left: 10px;
+ margin-top: 7px;
+
+}
+.right{
+  height: 100%;
+  width:70%;
+}
+.month {
+  padding: 40px 20px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+  border-radius: 12px 12px 0 0 ;
+ 
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 3%;
+  color: #666;
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 10px;
+}
+
+.days {
+  padding: 30px 0;
+  background: #eee;
+  margin: 0;
+  border-radius:0 0 12px 12px  ;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 3%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:15px;
+  color: rgb(255, 255, 255);
+  margin-left: 45px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+
+}
+
+.btn {
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:15px;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  display: inline-block;
+}
+
+.active {
+ color:#1abc9c ;
+
+}
+
+.add {
+  background-color: #ffffff; /* Green */
+  border: none;
+  color: #1abc9c;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-right: 400px;
+  margin-bottom: 30px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+
+a{
+color: #ddd;
+text-decoration: none;
+}
+h4{
+  text-decoration: underline;
+text-align: center;
+color: #1abc9c;
+margin-top: 30px;
+}
+.list{
+  color: #666;
+margin-left: 30px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 5px;
+  margin-top:50px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #1abc9c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 4px;
+  width: 5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
